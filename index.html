@@ -1313,4 +1313,16 @@ iVBORw0KGgoAAAANSUhEUgAAAlgAAAUUCAIAAACMOfsSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
     el.addEventListener('mouseenter',()=>{follower.style.width='60px';follower.style.height='60px';});
     el.addEventListener('mouseleave',()=>{follower.style.width='36px';follower.style.height='36px';});
   });
-  const obs=n
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
