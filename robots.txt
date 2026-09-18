@@ -1,0 +1,5 @@
+# Portfolio privato: nessuna indicizzazione.
+# Nota: su un repository di progetto GitHub Pages serve questo file su /portfolio/robots.txt,
+# percorso che i motori di ricerca ignorano. Il blocco vero è il meta robots in index.html.
+User-agent: *
+Disallow: /
