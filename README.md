@@ -13,10 +13,21 @@ Online: https://gaiateris.github.io/portfolio/
 
 Se il repository ha un nome diverso da `portfolio`, aggiorna l'indirizzo nei tag `canonical`, `og:url` e `og:image` in testa a `index.html`.
 
+## Due lingue
+
+Il sito esiste in italiano e in inglese, con un selettore ITA/ENG nella barra in alto:
+
+- `index.html` — italiano (pagina principale)
+- `en/index.html` — inglese
+
+Sono due pagine indipendenti: **se modifichi un testo, aggiornalo in entrambe.**
+I due file condividono CSS, JavaScript e immagini, quindi le modifiche grafiche valgono per tutte e due.
+
 ## Struttura
 
 ```
-index.html              la pagina
+index.html              la pagina in italiano
+en/index.html           la pagina in inglese
 .nojekyll               dice a GitHub Pages di pubblicare i file così come sono
 favicon.svg, apple-touch-icon.png
 assets/

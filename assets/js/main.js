@@ -22,7 +22,7 @@
     const setOpen = (open) => {
       nav.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
+      toggle.setAttribute('aria-label', open ? (toggle.dataset.labelClose || 'Close menu') : (toggle.dataset.labelOpen || 'Open menu'));
     };
     const isOpen = () => nav.classList.contains('is-open');
 

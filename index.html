@@ -14,6 +14,10 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://gaiateris.github.io/portfolio/">
+<link rel="alternate" hreflang="it" href="https://gaiateris.github.io/portfolio/">
+<link rel="alternate" hreflang="en" href="https://gaiateris.github.io/portfolio/en/">
+<link rel="alternate" hreflang="x-default" href="https://gaiateris.github.io/portfolio/">
+<meta property="og:locale:alternate" content="en_US">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
@@ -45,8 +49,14 @@
       <span class="nav-name">Gaia Terisacco</span>
     </a>
 
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Apri menu" data-nav-toggle>
+    <div class="nav-right">
+      <nav class="lang-switch" aria-label="Lingua">
+        <a href="./" lang="it" hreflang="it" aria-current="true">ITA</a>
+        <a href="en/" lang="en" hreflang="en">ENG</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Apri menu" data-label-open="Apri menu" data-label-close="Chiudi menu" data-nav-toggle>
       <svg class="icon icon-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9h16M4 15h16"/></svg>      <svg class="icon icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>    </button>
+    </div>
 
     <div class="nav-panel" id="nav-panel" data-nav-panel>
       <ul class="nav-menu">
@@ -168,7 +178,7 @@
       <nav class="segmented" aria-label="Categorie di lavori">
         <ul>
                       <li><a href="#work-brand">Brand</a></li>
-                      <li><a href="#work-social">Social</a></li>
+                      <li><a href="#work-design-system">Design System</a></li><li><a href="#work-social">Social</a></li>
                       <li><a href="#work-ugc">UGC</a></li>
                       <li><a href="#work-web">Web</a></li>
                       <li><a href="#work-print">Stampa</a></li>
@@ -250,6 +260,16 @@
             </li>
                   </ul>
       </article>
+
+      <article class="work-group" id="work-design-system" aria-labelledby="work-design-system-title">
+        <header class="group-header"><div><p class="eyebrow">Design System</p><h3 class="group-title" id="work-design-system-title">Design system Yoyomove</h3></div><p class="group-desc">Fonte unica di verità per team interni, fornitori e sviluppatori: linee guida di brand, identità visiva, design token e componenti UI pronti da usare.</p></header><p class="ds-cta"><a class="btn-pill btn-pill--primary" href="https://landing.yoyomove.com/it/design-system/index.html" target="_blank" rel="noopener noreferrer" hreflang="it">Vedi il design system dal vivo<svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> (si apre in una nuova scheda)</span></a></p>        <ul class="gallery gallery--ds">
+          <li class="reveal"><figure class="tile"><a class="tile-link ar-16-9 tile-link--top" href="assets/img/design-system/colore.webp" data-lightbox data-caption="Visual identity — Palette e contrasti"><img src="assets/img/design-system/colore.webp" alt="Pagina Colore del design system Yoyomove: palette primaria con giallo #FFCC00 e nero, valori HEX, RGB e CMYK" width="1400" height="875" loading="lazy" decoding="async"></a><figcaption class="card-caption"><span class="caption-kicker">Visual identity</span><span class="caption-title">Palette e contrasti</span></figcaption></figure></li>
+          <li class="reveal"><figure class="tile"><a class="tile-link ar-16-9 tile-link--top" href="assets/img/design-system/index.webp" data-lightbox data-caption="Brand guidelines — Introduzione"><img src="assets/img/design-system/index.webp" alt="Pagina introduttiva del design system Yoyomove con il brand book scaricabile" width="1200" height="750" loading="lazy" decoding="async"></a><figcaption class="card-caption"><span class="caption-kicker">Brand guidelines</span><span class="caption-title">Introduzione</span></figcaption></figure></li>
+          <li class="reveal"><figure class="tile"><a class="tile-link ar-16-9 tile-link--top" href="assets/img/design-system/tipografia.webp" data-lightbox data-caption="Visual identity — Tipografia"><img src="assets/img/design-system/tipografia.webp" alt="Pagina Tipografia: le due famiglie Sofia Pro e Rogliano con i rispettivi ruoli e pesi" width="1200" height="750" loading="lazy" decoding="async"></a><figcaption class="card-caption"><span class="caption-kicker">Visual identity</span><span class="caption-title">Tipografia</span></figcaption></figure></li>
+          <li class="reveal"><figure class="tile"><a class="tile-link ar-16-9 tile-link--top" href="assets/img/design-system/componenti.webp" data-lightbox data-caption="Digital — Componenti UI"><img src="assets/img/design-system/componenti.webp" alt="Pagina Componenti UI: bottoni, card, form e note costruiti in HTML e CSS su Bootstrap 5.3" width="1200" height="750" loading="lazy" decoding="async"></a><figcaption class="card-caption"><span class="caption-kicker">Digital</span><span class="caption-title">Componenti UI</span></figcaption></figure></li>
+          <li class="reveal"><figure class="tile"><a class="tile-link ar-16-9 tile-link--top" href="assets/img/design-system/token.webp" data-lightbox data-caption="Digital — Design token"><img src="assets/img/design-system/token.webp" alt="Pagina Design token: colore, tipografia, spazi e forma come variabili CSS" width="1200" height="750" loading="lazy" decoding="async"></a><figcaption class="card-caption"><span class="caption-kicker">Digital</span><span class="caption-title">Design token</span></figcaption></figure></li>
+        </ul>
+            </article>
 
       <!-- Contenuti social -->
             <article class="work-group" id="work-social" aria-labelledby="work-social-title">
